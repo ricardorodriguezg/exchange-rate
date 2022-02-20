@@ -1,0 +1,47 @@
+{
+   "body": [
+        {
+        "symbol":"PEN",
+        "name":"Soles",
+        "listCurrency":[
+            {
+                "symbol":"USD",
+                "factor":0.304
+            },
+            {
+                "symbol":"EUR",
+                "factor":0.25
+            }
+        ]
+        },
+        {
+        "symbol":"USD",
+        "name":"Dólares",
+        "listCurrency":[
+            {
+                "symbol":"PEN",
+                "factor":3.25
+            },
+            {
+                "symbol":"EUR",
+                "factor":0.88
+            }
+        ]
+        }
+        ,
+        {
+        "symbol":"EUR",
+        "name":"Euro",
+        "listCurrency":[
+            {
+                "symbol":"PEN",
+                "factor":4.25
+            },
+            {
+                "symbol":"USD",
+                "factor":1.13
+            }
+        ]
+        }
+    ]
+}
