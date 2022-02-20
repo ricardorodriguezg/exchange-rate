@@ -22,7 +22,7 @@ class MainViewModel : ObservableObject{
     
     @Published var amountToSendText = 1.0{
         didSet{
-            self.calculateAmoutByCurrency()
+            self.calculateAmoutToReceive()
         }
     }
 

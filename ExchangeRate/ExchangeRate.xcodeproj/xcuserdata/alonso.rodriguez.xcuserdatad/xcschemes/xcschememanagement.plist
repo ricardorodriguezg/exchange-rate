@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ExchangeRateUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>02F62B6A27C1A95D00D325E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02F62B7A27C1A96100D325E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02F62B8427C1A96100D325E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

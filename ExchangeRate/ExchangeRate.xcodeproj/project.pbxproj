@@ -34,6 +34,7 @@
 		02F62BCE27C21A9300D325E3 /* ResponseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F62BCD27C21A9200D325E3 /* ResponseBase.swift */; };
 		02F62BD227C2223300D325E3 /* ExchangeRateResult.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02F62BD027C2223300D325E3 /* ExchangeRateResult.xcdatamodeld */; };
 		02F62BD427C2231600D325E3 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F62BD327C2231600D325E3 /* PersistenceController.swift */; };
+		02F62BD627C238FB00D325E3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F62BD527C238FA00D325E3 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		02F62BCD27C21A9200D325E3 /* ResponseBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBase.swift; sourceTree = "<group>"; };
 		02F62BD127C2223300D325E3 /* ExchangeRateResult.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeRateResult.xcdatamodel; sourceTree = "<group>"; };
 		02F62BD327C2231600D325E3 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		02F62BD527C238FA00D325E3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		02F62B8827C1A96100D325E3 /* ExchangeRateUITests */ = {
 			isa = PBXGroup;
 			children = (
+				02F62BD527C238FA00D325E3 /* SnapshotHelper.swift */,
 				02F62B8927C1A96100D325E3 /* ExchangeRateUITests.swift */,
 				02F62B8B27C1A96100D325E3 /* ExchangeRateUITestsLaunchTests.swift */,
 			);
@@ -353,13 +356,16 @@
 				TargetAttributes = {
 					02F62B6A27C1A95D00D325E3 = {
 						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
 					};
 					02F62B7A27C1A96100D325E3 = {
 						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 02F62B6A27C1A95D00D325E3;
 					};
 					02F62B8427C1A96100D325E3 = {
 						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 02F62B6A27C1A95D00D325E3;
 					};
 				};
@@ -454,6 +460,7 @@
 			files = (
 				02F62B8A27C1A96100D325E3 /* ExchangeRateUITests.swift in Sources */,
 				02F62B8C27C1A96100D325E3 /* ExchangeRateUITestsLaunchTests.swift in Sources */,
+				02F62BD627C238FB00D325E3 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,9 +602,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"ExchangeRate/Preview Content\"";
-				DEVELOPMENT_TEAM = JUMR3Q95S8;
+				DEVELOPMENT_TEAM = 3HYJC4GQUU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExchangeRate/Info.plist;
@@ -611,11 +618,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pe.rrodriguez.ExchangeRate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exchange.rr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -625,9 +632,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"ExchangeRate/Preview Content\"";
-				DEVELOPMENT_TEAM = JUMR3Q95S8;
+				DEVELOPMENT_TEAM = 3HYJC4GQUU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExchangeRate/Info.plist;
@@ -641,11 +648,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pe.rrodriguez.ExchangeRate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exchange.rr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -655,7 +662,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = JUMR3Q95S8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -675,7 +682,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = JUMR3Q95S8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -694,8 +701,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JUMR3Q95S8;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 3HYJC4GQUU;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pe.rrodriguez.ExchangeRateUITests;
@@ -712,8 +719,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JUMR3Q95S8;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 3HYJC4GQUU;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pe.rrodriguez.ExchangeRateUITests;
